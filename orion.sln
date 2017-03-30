@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{487A7682-4D56-A9DF-2C8A-18F6A05329D5}") = "orion", "Assembly-CSharp.csproj", "{245CF976-CEA9-EB01-60D3-5986FABAE701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{245CF976-CEA9-EB01-60D3-5986FABAE701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245CF976-CEA9-EB01-60D3-5986FABAE701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245CF976-CEA9-EB01-60D3-5986FABAE701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245CF976-CEA9-EB01-60D3-5986FABAE701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
