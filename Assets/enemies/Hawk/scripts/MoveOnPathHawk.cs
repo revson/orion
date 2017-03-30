@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveOnPathTracker : MonoBehaviour {
+public class MoveOnPathHawk : MonoBehaviour {
 
 	private EditorPathScript PathToFollow;
 	private int CurrentWaiPointID = 0;
@@ -31,9 +31,11 @@ public class MoveOnPathTracker : MonoBehaviour {
 		}
 
 		if (CurrentWaiPointID == PathToFollow.path_objs.Count) {
-			Destroy(this.gameObject);
+			//Destroy(this.gameObject);
+			CurrentWaiPointID = 1;
 		}
 
 	}
+
 
 }

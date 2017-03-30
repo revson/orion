@@ -140,6 +140,18 @@ public class ShipPlayer : MonoBehaviour {
 			Destroy (col.gameObject);
 			break;
 
+		case "projectileHawk":
+
+			shotHit (PlayerPrefs.GetInt("HawkHit"));
+			Destroy (col.gameObject);
+			break;
+
+		case "projectileStriker":
+
+			shotHit (PlayerPrefs.GetInt("StrikerHit"));
+			Destroy (col.gameObject);
+			break;
+
 		case "energyBall":			
 
 		    energy += 0.05f;

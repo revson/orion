@@ -24,6 +24,20 @@ public class Stage01 : MonoBehaviour {
 		PlayerPrefs.SetFloat("TrackerHp", 2);
 		PlayerPrefs.SetInt("TrackerHit", 2);
 		PlayerPrefs.SetInt("TrackerValue", 20);
+
+		//------------------------------------------
+		//Hawk
+		//------------------------------------------
+		PlayerPrefs.SetFloat("HawkHp", 3);
+		PlayerPrefs.SetInt("HawkHit", 2);
+		PlayerPrefs.SetInt("HawkValue", 30);
+
+		//------------------------------------------
+		//Stricker
+		//------------------------------------------
+		PlayerPrefs.SetFloat("StrikerHp", 4);
+		PlayerPrefs.SetInt("StrikerHit", 2);
+		PlayerPrefs.SetInt("StrikerValue", 40);
 	}
 	
 

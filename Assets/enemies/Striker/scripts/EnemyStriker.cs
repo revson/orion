@@ -10,7 +10,7 @@ public class EnemyStriker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(shooting());
-		PlayerPrefs.SetInt ("qtdStriker", 0);
+
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class EnemyStriker : MonoBehaviour {
 
 		yield return new WaitForSeconds (3f);
 
-		for (int i = 0; i <= 4; i++) {			
+		for (int i = 0; i <= 3; i++) {			
 			shoot ();
 			yield return new WaitForSeconds (0.15f);
 		}
@@ -36,14 +36,4 @@ public class EnemyStriker : MonoBehaviour {
 
 	}
 
-	void OnDestroy () {
-		
-		PlayerPrefs.SetInt ("qtdStriker", PlayerPrefs.GetInt ("qtdStriker") + 1 );
-
-		Destroy (transform.parent.gameObject);
-		if(PlayerPrefs.GetInt ("qtdStriker") == 2){
-			//desativa o container
-			transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
-		}
-	}
 }

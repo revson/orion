@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\enemies\Hawk\scripts\EnemyHawk.cs" />
+     <Compile Include="Assets\enemies\Hawk\scripts\MoveOnPathHawk.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\DestroyProjectile.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\EnemyHunter.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\WaveHunters.cs" />
+     <Compile Include="Assets\enemies\Striker\scripts\EnemyStriker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\EnemyTracker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\MoveOnPathTracker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\WaveTracker.cs" />
@@ -62,7 +64,6 @@
      <Compile Include="Assets\scripts\Enemy.cs" />
      <Compile Include="Assets\scripts\EnemyDestroyer.cs" />
      <Compile Include="Assets\scripts\EnemyDish.cs" />
-     <Compile Include="Assets\scripts\EnemyStriker.cs" />
      <Compile Include="Assets\scripts\ExplosionDestroy.cs" />
      <Compile Include="Assets\scripts\Fade.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />

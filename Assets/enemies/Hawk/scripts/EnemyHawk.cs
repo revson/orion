@@ -21,7 +21,7 @@ public class EnemyHawk : MonoBehaviour {
 	public IEnumerator shooting(){
 
 		yield return new WaitForSeconds (3f);
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i <= 3; i++) {
 			shoot ();
 			yield return new WaitForSeconds (0.10f);
 		}
@@ -30,16 +30,8 @@ public class EnemyHawk : MonoBehaviour {
 	}
 
 	void shoot(){
-		GameObject tempPrefab = Instantiate (projectilePrefab, firePoint.transform.position, firePoint.transform.rotation) as GameObject;
-		tempPrefab.GetComponent<Rigidbody2D> ().velocity = new Vector2(0, -speedShoot);
-		GameObject tempPrefab2 = Instantiate (projectilePrefab, firePoint2.transform.position, firePoint2.transform.rotation) as GameObject;
-		tempPrefab2.GetComponent<Rigidbody2D> ().velocity = new Vector2(0, -speedShoot);
-	}
-
-	void OnDestroy () {
-		
-		Destroy (transform.parent.gameObject);
-
+		Instantiate (projectilePrefab, firePoint.transform.position, firePoint.transform.rotation);
+		Instantiate (projectilePrefab, firePoint2.transform.position, firePoint2.transform.rotation);
 	}
 
 
