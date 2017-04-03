@@ -38,6 +38,13 @@ public class Stage01 : MonoBehaviour {
 		PlayerPrefs.SetFloat("StrikerHp", 4);
 		PlayerPrefs.SetInt("StrikerHit", 2);
 		PlayerPrefs.SetInt("StrikerValue", 40);
+
+		//------------------------------------------
+		//Destroyer
+		//------------------------------------------
+		PlayerPrefs.SetFloat("DestroyerHp", 5);
+		PlayerPrefs.SetInt("DestroyerHit", 2);
+		PlayerPrefs.SetInt("DestroyerValue", 50);
 	}
 	
 
