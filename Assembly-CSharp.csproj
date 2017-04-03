@@ -45,8 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\enemies\Dish\scripts\EnemyDish.cs" />
+     <Compile Include="Assets\enemies\Dish\scripts\MoveOnPathDish.cs" />
      <Compile Include="Assets\enemies\Hawk\scripts\EnemyHawk.cs" />
      <Compile Include="Assets\enemies\Hawk\scripts\MoveOnPathHawk.cs" />
+     <Compile Include="Assets\enemies\Hiperion\scripts\EnemyHyperion.cs" />
+     <Compile Include="Assets\enemies\Hiperion\scripts\HiperionGun.cs" />
+     <Compile Include="Assets\enemies\Hiperion\scripts\MoveOnPathHyperion.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\DestroyProjectile.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\EnemyHunter.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\WaveHunters.cs" />
@@ -56,15 +61,8 @@
      <Compile Include="Assets\enemies\Tracker\scripts\MoveOnPathTracker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\WaveTracker.cs" />
      <Compile Include="Assets\scripts\BecameInvisible.cs" />
-     <Compile Include="Assets\scripts\ConatinerStriker.cs" />
-     <Compile Include="Assets\scripts\ContainerDestroyer.cs" />
-     <Compile Include="Assets\scripts\ContainerDish.cs" />
-     <Compile Include="Assets\scripts\ContainerHawk.cs" />
-     <Compile Include="Assets\scripts\ContainerHiperion.cs" />
      <Compile Include="Assets\scripts\EditorPathScript.cs" />
      <Compile Include="Assets\scripts\Enemy.cs" />
-     <Compile Include="Assets\scripts\EnemyDestroyer.cs" />
-     <Compile Include="Assets\scripts\EnemyDish.cs" />
      <Compile Include="Assets\scripts\ExplosionDestroy.cs" />
      <Compile Include="Assets\scripts\Fade.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
@@ -74,7 +72,6 @@
      <Compile Include="Assets\scripts\MoveBalls.cs" />
      <Compile Include="Assets\scripts\MoveOnPath.cs" />
      <Compile Include="Assets\scripts\MoveShoot.cs" />
-     <Compile Include="Assets\scripts\PlasmaGun.cs" />
      <Compile Include="Assets\scripts\Rotation.cs" />
      <Compile Include="Assets\scripts\Scene01Controller.cs" />
      <Compile Include="Assets\scripts\Scene02Controller.cs" />

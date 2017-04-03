@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour {
 		name = transform.name;
 		hp = PlayerPrefs.GetFloat(name+"Hp");
 		enemyValue = PlayerPrefs.GetInt(name+"Value");
+
 	}
 
 	// Update is called once per frame
@@ -41,11 +42,12 @@ public class Enemy : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D col){
-
+		
 		switch (col.gameObject.tag) {
 		case "simpleShootPlayer":
 			//simple shoot = 1
 			shotHit (1);
+			print (name);
 			Destroy (col.gameObject);
 			break;
 
@@ -63,7 +65,7 @@ public class Enemy : MonoBehaviour {
 
 		if(hp <= 0 ){
 			hp = 0;
-			//finalize enemy
+			//finalize enemy, manda false para nao instanciar a energia.
 			death(false);
 
 		}

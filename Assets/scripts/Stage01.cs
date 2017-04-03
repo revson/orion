@@ -45,6 +45,20 @@ public class Stage01 : MonoBehaviour {
 		PlayerPrefs.SetFloat("DestroyerHp", 5);
 		PlayerPrefs.SetInt("DestroyerHit", 2);
 		PlayerPrefs.SetInt("DestroyerValue", 50);
+
+		//------------------------------------------
+		//DishAtack
+		//------------------------------------------
+		PlayerPrefs.SetFloat("DishAtackHp", 30);
+		PlayerPrefs.SetInt("DishAtackHit", 2);
+		PlayerPrefs.SetInt("DishAtackValue", 1000);
+
+		//------------------------------------------
+		//Hyperion
+		//------------------------------------------
+		PlayerPrefs.SetFloat("HyperionHp", 100);
+		PlayerPrefs.SetInt("HyperionHit", 5);
+		PlayerPrefs.SetInt("HyperionValue", 10000);
 	}
 	
 

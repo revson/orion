@@ -68,7 +68,7 @@ public class ShipPlayer : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
 
 	void FixedUpdate(){
@@ -154,6 +154,16 @@ public class ShipPlayer : MonoBehaviour {
 
 		case "ProjectileDestroyer":
 			shotHit (PlayerPrefs.GetInt("DestroyerHit"));
+			Destroy (col.gameObject);
+			break;
+
+		case "ProjectileDishAtack":
+			shotHit (PlayerPrefs.GetInt("DishAtackHit"));
+			Destroy (col.gameObject);
+			break;
+
+		case "ProjectileHyperion":
+			shotHit (PlayerPrefs.GetInt("HyperionHit"));
 			Destroy (col.gameObject);
 			break;
 
