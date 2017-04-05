@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour {
 
 	public GameObject explosion, energyBall;
 
+
 	private int enemyValue;
 	private float hp;
 	private int score;

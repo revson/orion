@@ -28,6 +28,8 @@ public class ShipPlayer : MonoBehaviour {
 
 	public Text txtScore;
 
+	public Animator explo;
+
 
 	// Use this for initialization
 	void Start () {
