@@ -5,7 +5,7 @@ public class EnemyHyperion : MonoBehaviour {
 
 	private int enemyValue;
 	private int score;
-	//public GameObject[] explosionAnimate;
+	public GameObject[] explosionAnimate;
 	// Use this for initialization
 	void Start () {
 		
@@ -25,9 +25,12 @@ public class EnemyHyperion : MonoBehaviour {
 	void Finalize(){
 		score = PlayerPrefs.GetInt ("score");
 		score += enemyValue;
-		PlayerPrefs.SetInt ("score", score );
+		PlayerPrefs.SetInt ("score", score);
 		//hp recebe 1 para sair do loop
 		PlayerPrefs.SetFloat ("HyperionHp", 1);
-		//transform.
+
+		for (int i = 0; i <= 12; i++) {
+			explosionAnimate[i].SetActive(true);
+		}
 	}
 }

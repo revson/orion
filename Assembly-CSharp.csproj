@@ -61,6 +61,7 @@
      <Compile Include="Assets\enemies\Tracker\scripts\MoveOnPathTracker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\WaveTracker.cs" />
      <Compile Include="Assets\scripts\BecameInvisible.cs" />
+     <Compile Include="Assets\scripts\Capsule.cs" />
      <Compile Include="Assets\scripts\EditorPathScript.cs" />
      <Compile Include="Assets\scripts\Enemy.cs" />
      <Compile Include="Assets\scripts\ExplosionDestroy.cs" />
@@ -79,8 +80,6 @@
      <Compile Include="Assets\scripts\ShipPlayer.cs" />
      <Compile Include="Assets\scripts\SimpleLaser.cs" />
      <Compile Include="Assets\scripts\Stage01.cs" />
-     <Compile Include="Assets\scripts\WaveDestroyer.cs" />
-     <Compile Include="Assets\scripts\WaveHawk.cs" />
      <None Include="Assets\text\dialogo_cena_02.txt" />
      <None Include="Assets\text\dialogo_cena_01.txt" />
  <Reference Include="UnityEngine.UI">

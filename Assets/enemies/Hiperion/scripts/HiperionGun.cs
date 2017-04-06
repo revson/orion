@@ -5,7 +5,7 @@ public class HiperionGun : MonoBehaviour {
 
 	private bool visible;
 
-	public GameObject explosion, energyBall, projectilePrefab;
+	public GameObject explosion, energyBall, projectilePrefab, firePoint;
 
 	private int enemyValue;
 	private float hp;
@@ -101,7 +101,7 @@ public class HiperionGun : MonoBehaviour {
 
 	public IEnumerator shooting(){
 
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (3f);
 		if (visible) {
 			shoot ();
 		}
@@ -110,7 +110,7 @@ public class HiperionGun : MonoBehaviour {
 	}
 
 	void shoot(){
-		Instantiate (projectilePrefab, transform.position, transform.rotation) ;
+		Instantiate (projectilePrefab, firePoint.transform.position, firePoint.transform.rotation);
 	}
 
 	void  OnBecameVisible()

@@ -169,6 +169,10 @@ public class ShipPlayer : MonoBehaviour {
 			Destroy (col.gameObject);
 			break;
 
+		case "capsule":
+			Destroy (col.gameObject);
+			break;
+
 		case "energyBall":			
 
 		    energy += 0.05f;
@@ -221,13 +225,6 @@ public class ShipPlayer : MonoBehaviour {
 
 	}
 
-	//pega o objto particula
-	void OnParticleCollision(GameObject go) {
-		//hit = 5;
-		shotHit(5);
-		Destroy (go);
-
-	}
 
 
     //quando leva um tiro
