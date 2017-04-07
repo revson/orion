@@ -169,10 +169,6 @@ public class ShipPlayer : MonoBehaviour {
 			Destroy (col.gameObject);
 			break;
 
-		case "capsule":
-			Destroy (col.gameObject);
-			break;
-
 		case "energyBall":			
 
 		    energy += 0.05f;

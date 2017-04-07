@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\enemies\Destroyer\scripts\EnemyDestroyer.cs" />
+     <Compile Include="Assets\enemies\Destroyer\scripts\MoveOnPathDestroyer.cs" />
      <Compile Include="Assets\enemies\Dish\scripts\EnemyDish.cs" />
      <Compile Include="Assets\enemies\Dish\scripts\MoveOnPathDish.cs" />
      <Compile Include="Assets\enemies\Hawk\scripts\EnemyHawk.cs" />
@@ -52,7 +54,6 @@
      <Compile Include="Assets\enemies\Hiperion\scripts\EnemyHyperion.cs" />
      <Compile Include="Assets\enemies\Hiperion\scripts\HiperionGun.cs" />
      <Compile Include="Assets\enemies\Hiperion\scripts\MoveOnPathHyperion.cs" />
-     <Compile Include="Assets\enemies\Hunter\scripts\DestroyProjectile.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\EnemyHunter.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\WaveHunters.cs" />
      <Compile Include="Assets\enemies\Striker\scripts\EnemyStriker.cs" />
@@ -64,7 +65,6 @@
      <Compile Include="Assets\scripts\Capsule.cs" />
      <Compile Include="Assets\scripts\EditorPathScript.cs" />
      <Compile Include="Assets\scripts\Enemy.cs" />
-     <Compile Include="Assets\scripts\ExplosionDestroy.cs" />
      <Compile Include="Assets\scripts\Fade.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
      <Compile Include="Assets\scripts\GameOver.cs" />
@@ -80,6 +80,7 @@
      <Compile Include="Assets\scripts\ShipPlayer.cs" />
      <Compile Include="Assets\scripts\SimpleLaser.cs" />
      <Compile Include="Assets\scripts\Stage01.cs" />
+     <Compile Include="Assets\scripts\WavesStage01.cs" />
      <None Include="Assets\text\dialogo_cena_02.txt" />
      <None Include="Assets\text\dialogo_cena_01.txt" />
  <Reference Include="UnityEngine.UI">

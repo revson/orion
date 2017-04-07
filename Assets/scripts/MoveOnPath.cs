@@ -23,9 +23,9 @@ public class MoveOnPath : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//distancia do proximo ponto
-		float distance = Vector3.Distance (PathToFollow.path_objs [CurrentWaiPointID].position, transform.position);
+		float distance = Vector3.Distance (PathToFollow.path_objs [CurrentWaiPointID].position, lastPosition);
 		//print (distance);
-		transform.position = Vector3.MoveTowards (transform.position, PathToFollow.path_objs [CurrentWaiPointID].position, Time.deltaTime * speed);
+		transform.position = Vector3.MoveTowards (lastPosition, PathToFollow.path_objs [CurrentWaiPointID].position, Time.deltaTime * speed);
 
 		if(distance <= reachDistance){ 
 			CurrentWaiPointID++;

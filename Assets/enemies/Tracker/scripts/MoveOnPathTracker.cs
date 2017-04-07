@@ -16,7 +16,7 @@ public class MoveOnPathTracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {	
 		PathToFollow = GameObject.Find (pathName).GetComponent<EditorPathScript> ();
-		lastPosition = transform.position;
+
 	}
 
 	// Update is called once per frame

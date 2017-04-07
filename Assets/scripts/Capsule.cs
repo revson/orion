@@ -11,10 +11,23 @@ public class Capsule : MonoBehaviour {
 		transform.Rotate(0, 0, Time.deltaTime * 5f);
 	}
 
-	void OnDestroy(){
-		int range = Random.Range (0, 100);
+	void OnTriggerEnter2D(Collider2D col){
 
-		if (range > 50) {
+		switch (col.gameObject.tag) {
+		case "simpleShootPlayer":
+			
+
+			Destroy (this.gameObject);
+			break;
+					
+		}
+
+	}
+
+	void OnDestroy(){
+		int range = Random.Range (0, 10);
+
+		if (range > 5) {
 			Instantiate (energyBall, transform.position, transform.rotation);
 		} else {
 			Instantiate (hpBall, transform.position, transform.rotation);

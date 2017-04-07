@@ -11,12 +11,16 @@ public class ItemBall : MonoBehaviour {
         switch (col.gameObject.tag)
         {
 
-            case "Player":
-
-                itemBallFX.Play();
-                Destroy(this.gameObject, 0.2f);
-                break;
+			case "Player":				
+				StartCoroutine ("finalize");
+	            break;
         }
 
     }
+
+	IEnumerator finalize(){
+		itemBallFX.Play();
+		yield return new WaitForSeconds (0.2f);
+		Destroy (this.gameObject);
+	}
 }

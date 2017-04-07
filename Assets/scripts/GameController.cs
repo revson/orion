@@ -11,7 +11,6 @@ public class GameController : MonoBehaviour {
 		PlayerPrefs.SetInt ("score", 0);
 		PlayerPrefs.SetInt ("qtdDestroyer", 0);
 
-
 	}
 
 	// Update is called once per frame
@@ -27,8 +26,6 @@ public class GameController : MonoBehaviour {
 		yield return new WaitForSeconds (2);
 		SceneManager.LoadScene ("gameOver");
 	}
-
-
 
 
 

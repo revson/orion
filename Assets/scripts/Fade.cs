@@ -44,9 +44,6 @@ public class Fade : MonoBehaviour {
 			yield return new WaitForEndOfFrame ();
 		}
 
-
-
-
 	}
 
 

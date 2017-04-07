@@ -16,13 +16,13 @@ public class EnemyHyperion : MonoBehaviour {
 	void Update () {
 		
 		if (PlayerPrefs.GetFloat ("HyperionHp") == 0) {
-			Finalize();
+			finalize();
 		}
 
 
 	}
 
-	void Finalize(){
+	void finalize(){
 		score = PlayerPrefs.GetInt ("score");
 		score += enemyValue;
 		PlayerPrefs.SetInt ("score", score);

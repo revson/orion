@@ -9,13 +9,11 @@ public class Enemy : MonoBehaviour {
 	private int enemyValue;
 	private float hp;
 	private int score;
-	private string name;
 
 	// Use this for initialization
 	void Start () {
-		name = transform.name;
-		hp = PlayerPrefs.GetFloat(name+"Hp");
-		enemyValue = PlayerPrefs.GetInt(name+"Value");
+		hp = PlayerPrefs.GetFloat(transform.name+"Hp");
+		enemyValue = PlayerPrefs.GetInt(transform.name+"Value");
 
 	}
 
@@ -48,7 +46,6 @@ public class Enemy : MonoBehaviour {
 		case "simpleShootPlayer":
 			//simple shoot = 1
 			shotHit (1);
-			print (name);
 			Destroy (col.gameObject);
 			break;
 

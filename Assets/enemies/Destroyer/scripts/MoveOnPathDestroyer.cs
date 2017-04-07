@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveOnPathDish : MonoBehaviour {
+public class MoveOnPathDestroyer : MonoBehaviour {
 
 	private EditorPathScript PathToFollow;
 	private int CurrentWaiPointID = 0;
@@ -16,7 +16,6 @@ public class MoveOnPathDish : MonoBehaviour {
 	// Use this for initialization
 	void Start () {	
 		PathToFollow = GameObject.Find (pathName).GetComponent<EditorPathScript> ();
-
 	}
 
 	// Update is called once per frame
