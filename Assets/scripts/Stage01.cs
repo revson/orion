@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class Stage01 : MonoBehaviour {
 
-	private Fade scriptFade;
 
 	// Use this for initialization
 	void Awake() {
@@ -63,9 +62,7 @@ public class Stage01 : MonoBehaviour {
 		PlayerPrefs.SetInt("HyperionValue", 10000);
 	}
 
-	void Start () {		
-		scriptFade = FindObjectOfType(typeof(Fade)) as Fade;
-	}
+
 	
 
 

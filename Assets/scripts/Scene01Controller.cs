@@ -22,6 +22,7 @@ public class Scene01Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		scriptFade = FindObjectOfType(typeof(Fade)) as Fade;
 		sound = cam.GetComponent<AudioSource> ();
 		backgroundSound = centroComando.GetComponent<AudioSource> ();
 		StartCoroutine ("information");

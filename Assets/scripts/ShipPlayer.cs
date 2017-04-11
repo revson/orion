@@ -295,6 +295,7 @@ public class ShipPlayer : MonoBehaviour {
         PlayerPrefs.SetString("activePlayer", "no");
         gameObject.SetActive (false);
 
+
 	}
 
 }

@@ -55,7 +55,6 @@
      <Compile Include="Assets\enemies\Hiperion\scripts\HiperionGun.cs" />
      <Compile Include="Assets\enemies\Hiperion\scripts\MoveOnPathHyperion.cs" />
      <Compile Include="Assets\enemies\Hunter\scripts\EnemyHunter.cs" />
-     <Compile Include="Assets\enemies\Hunter\scripts\WaveHunters.cs" />
      <Compile Include="Assets\enemies\Striker\scripts\EnemyStriker.cs" />
      <Compile Include="Assets\enemies\Striker\scripts\MoveOnPathStiker.cs" />
      <Compile Include="Assets\enemies\Tracker\scripts\EnemyTracker.cs" />
