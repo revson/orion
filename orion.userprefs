@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ShipPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\WavesStage01.cs">
     <Files>
-      <File FileName="Assets\scripts\ShipPlayer.cs" Line="296" Column="38" />
-      <File FileName="Assets\scripts\Enemy.cs" Line="16" Column="59" />
-      <File FileName="Assets\scripts\Stage01.cs" Line="26" Column="33" />
-      <File FileName="Assets\scripts\GameController.cs" Line="10" Column="20" />
-      <File FileName="Assets\scripts\WavesStage01.cs" Line="30" Column="38" />
-      <File FileName="Assets\scripts\Rotation.cs" Line="16" Column="39" />
-      <File FileName="Assets\scripts\MoveBalls.cs" Line="13" Column="10" />
-      <File FileName="Assets\scripts\MoveShoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ShipPlayer.cs" Line="198" Column="32" />
+      <File FileName="Assets\scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Stage01.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\WavesStage01.cs" Line="34" Column="39" />
+      <File FileName="Assets\scripts\Rotation.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemies\Striker\scripts\EnemyStriker.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\MoveBalls.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Capsule.cs" Line="28" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

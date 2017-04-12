@@ -9,8 +9,8 @@ public class MoveBalls : MonoBehaviour {
 		player = GameObject.Find ("ShipPlayer");
 	}
 	void Update() {
-        if (PlayerPrefs.GetString("activePlayer") == "yes")
-        {
+		if (PlayerPrefs.GetString("activePlayer") == "yes") {
+        
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
 	}

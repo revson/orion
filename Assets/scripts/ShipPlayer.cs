@@ -9,7 +9,7 @@ public class ShipPlayer : MonoBehaviour {
 	private SimpleLaser simpleLaser;
 
 	public Sprite[] spritePlayer;
-	public GameObject projectilePrefab, explosion;
+	public GameObject projectilePrefab, explosion, forceField;
 	public Transform firePoint;
 	public float shootForce, speedShip, hpMax, hp, percentageHp;
 	public float energy, shield;
@@ -195,7 +195,7 @@ public class ShipPlayer : MonoBehaviour {
 			vector3.x = 1;
 			yellowBar.localScale = vector3;
 			shield = 1;
-
+			forceField.SetActive (true);
             break;
 
 		

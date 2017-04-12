@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Capsule : MonoBehaviour {
-	public GameObject energyBall, hpBall, explosion;
+	public GameObject shieldBall, hpBall, explosion;
 	private GameObject preFab;
 		
 	// Update is called once per frame
@@ -14,8 +14,7 @@ public class Capsule : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 
 		switch (col.gameObject.tag) {
-		case "simpleShootPlayer":
-			
+		case "simpleShootPlayer":			
 
 			Destroy (this.gameObject);
 			break;
@@ -25,10 +24,11 @@ public class Capsule : MonoBehaviour {
 	}
 
 	void OnDestroy(){
-		int range = Random.Range (0, 10);
+		//int range = Random.Range (0, 10);
+		int range =6;
 
 		if (range > 5) {
-			Instantiate (energyBall, transform.position, transform.rotation);
+			Instantiate (shieldBall, transform.position, transform.rotation);
 		} else {
 			Instantiate (hpBall, transform.position, transform.rotation);
 		}

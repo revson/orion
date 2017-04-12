@@ -4,13 +4,14 @@ using System.Collections;
 public class WavesStage01 : MonoBehaviour {
 
 	public GameObject[] enemies;
-	//public GameObject[] holders;
+	public GameObject item;
 
 	// Use this for initialization
 	void Start () {
-		
+		StartCoroutine (itens());
 		StartCoroutine (waves());
-		//StartCoroutine (waveHawk());
+		//StartCoroutine (waveStricker());
+		//waveDishAtack();
 
 	}
 	
@@ -21,21 +22,26 @@ public class WavesStage01 : MonoBehaviour {
 
 	public IEnumerator waves(){
 
+		//======= 1ª wave 3 min. ===========
 		yield return new WaitForSeconds (7f);
 		StartCoroutine (waveHunter());
 
 		yield return new WaitForSeconds (14f);
 		StartCoroutine (waveTracker());
+		// ====== end wave ==================
 
-		yield return new WaitForSeconds (60f);
-		StartCoroutine (waveTracker());
+		// ====== first boss ================
+		yield return new WaitForSeconds (180f);
+		waveDishAtack ();
+		//===================================
+
 
 	}
 
 
 	public IEnumerator waveHunter(){
 		//Hunter enemy 0
-		for (int i = 0; i <= 50; i++) {
+		for (int i = 0; i <= 85; i++) {
 			Vector3 position = transform.position;
 			GameObject preFab;
 			float x = Random.Range (-12.79f, 12.79f);
@@ -53,7 +59,7 @@ public class WavesStage01 : MonoBehaviour {
 	public IEnumerator waveTracker(){
 		//enemy 1 tracker
 
-		for(int i = 0; i<=2; i++){
+		for(int i = 0; i<=3; i++){
 
 			for(int j = 0; j<=4; j++){
 				GameObject preFab;
@@ -61,8 +67,12 @@ public class WavesStage01 : MonoBehaviour {
 				preFab.name = "Tracker";
 				yield return new WaitForSeconds (0.80f);
 			}
-			yield return new WaitForSeconds (30);
+			yield return new WaitForSeconds (20);
 		}
+
+		//begin next wave
+		//yield return new WaitForSeconds (10f);
+		StartCoroutine (waveHawk());
 
 
 	}
@@ -70,13 +80,46 @@ public class WavesStage01 : MonoBehaviour {
 	public IEnumerator waveHawk(){
 		//enemy 2 Hawk
 
-		for(int j = 0; j<=6; j++){
+		for(int i = 0; i<=3; i++){
 			GameObject preFab;
 			preFab = Instantiate (enemies [2]) as GameObject;
 			preFab.name = "Hawk";
 			yield return new WaitForSeconds (2f);
 		}
 
+		//begin next wave
+		yield return new WaitForSeconds (20f);
+		StartCoroutine (waveStricker());
+
 	}
 
+	public IEnumerator waveStricker(){
+		//enemy 3 Stricker
+
+		for(int i = 0; i<=3; i++){
+			GameObject preFab;
+			preFab = Instantiate (enemies [3]) as GameObject;
+			preFab.name = "Striker";
+			yield return new WaitForSeconds (3f);
+		}
+
+	}
+
+
+	void waveDishAtack(){
+		//enemy 4 DishAtack Boss
+		GameObject preFab;
+		preFab = Instantiate (enemies [4]) as GameObject;
+		preFab.name = "DishAtack";
+
+
+	}
+
+	public IEnumerator itens(){
+		//
+		yield return new WaitForSeconds (45f);
+		Instantiate (item);	
+		StartCoroutine (itens());
+
+	}
 }
